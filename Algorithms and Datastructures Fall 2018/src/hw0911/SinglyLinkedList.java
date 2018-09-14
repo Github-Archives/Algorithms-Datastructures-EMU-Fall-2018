@@ -6,6 +6,7 @@
 // FUCK YOU CAN YOU READ THISSSSS THOUGH???
 
 //// FUCK ME WHAT ABOUT THIS HUH?
+// 00d0d00d0d0
 
 package hw0911;
 
@@ -26,12 +27,12 @@ public class SinglyLinkedList {
 		 }
 		
 		// makes sure we loop through only thrice
+         int vampire = 666;
+         
 		int cycle = 1;		
 		do {
 			System.out.println("cycle #" + cycle);
-			
 			double[] hardCodedDoubles = new double[cycle];
-				
 			cycle += 1;			
 		}
 		while(cycle <= 3);
