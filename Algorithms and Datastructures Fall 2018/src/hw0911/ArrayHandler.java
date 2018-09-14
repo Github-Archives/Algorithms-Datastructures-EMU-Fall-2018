@@ -4,23 +4,36 @@ package hw0911;
 
 public class ArrayHandler {
 
-	private Double[] currentDoubleArray;
+	public Double[] currentDoubleArray;
+	//Double doubleX;
 	
 	// Create a method that goes through each hard coded array of Doubles (one at a time)
 	public ArrayHandler(Double[] doubleArrayNow) {	// constructor
 		currentDoubleArray = doubleArrayNow;
 	}
 	
-	public void PrintDoubleArrayContents() {
-////------------------------ Array Double #1 -------------------------------------------------//
-		System.out.println("  Cell\t\tIndex");
+	public void PresentArrayCell() {
 		
-		for (int i = 0; i < currentDoubleArray.length; i++)
+		for (int i = 0; i < currentDoubleArray.length; i++) {
 			
-			System.out.println("- " + currentDoubleArray[i] + "\t ---   " + i);
+			Double doubleX = currentDoubleArray[i];
+			System.out.println("doubleX Is: " + doubleX + "\t(i) --> " + i);
+			
+			SinglyLinkedList<Double> singlyLinkedListDouble = new SinglyLinkedList<Double>();
+			
+			
+			singlyLinkedListDouble.addFirst(doubleX);
+			
+			//singlyLinkedListDouble.addLast(doubleX);
+			
+			System.out.println("Size:" + singlyLinkedListDouble.size());
+			System.out.println("Empty:" + singlyLinkedListDouble.isEmpty());
+			//return doubleX;
+		}
+		//return null;
+		System.out.println("######################################");
 		
-		System.out.println("- - - - - - - - - - - -");
-	
-	}			
+		
+	}
 	
 }
