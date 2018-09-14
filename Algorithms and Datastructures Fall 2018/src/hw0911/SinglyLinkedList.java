@@ -5,7 +5,7 @@ package hw0911;
 public class SinglyLinkedList <E> {//official book page @page #126
 	
 			////----------Creates the Nodes------------------------------
-			//----------- nested Node class ----------------------------
+			//----------- inner nested Node class ----------------------------
 			private static class Node<E> {
 				
 				private E element;	// reference to "element" stored at this Node
