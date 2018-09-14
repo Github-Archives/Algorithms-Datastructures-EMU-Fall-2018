@@ -5,7 +5,8 @@ package hw0911;
 public class ArrayHandler {
 
 	public Double[] currentDoubleArray;
-	//Double doubleX;
+	Double doubleX;
+	SinglyLinkedList<Double> singlyLinkedListDouble;
 	
 	// Create a method that goes through each hard coded array of Doubles (one at a time)
 	public ArrayHandler(Double[] doubleArrayNow) {	// constructor
@@ -16,24 +17,19 @@ public class ArrayHandler {
 		
 		for (int i = 0; i < currentDoubleArray.length; i++) {
 			
-			Double doubleX = currentDoubleArray[i];
+			doubleX = currentDoubleArray[i];
 			System.out.println("doubleX Is: " + doubleX + "\t(i) --> " + i);
 			
-			SinglyLinkedList<Double> singlyLinkedListDouble = new SinglyLinkedList<Double>();
-			
-			
+//			SinglyLinkedList<Double> singlyLinkedListDouble = new SinglyLinkedList<Double>();
+			singlyLinkedListDouble = new SinglyLinkedList<Double>();
 			singlyLinkedListDouble.addFirst(doubleX);
 			
-			//singlyLinkedListDouble.addLast(doubleX);
-			
-			System.out.println("Size:" + singlyLinkedListDouble.size());
-			System.out.println("Empty:" + singlyLinkedListDouble.isEmpty());
-			//return doubleX;
+			//System.out.println("[head] " + singlyLinkedListDouble.first());
+			//System.out.println("[tail] " + singlyLinkedListDouble.last());
+			//System.out.println("Size:" + singlyLinkedListDouble.size());
+			//System.out.println("Empty:" + singlyLinkedListDouble.isEmpty());
 		}
-		//return null;
-		System.out.println("######################################");
-		
-		
+		System.out.println("\n######################################");	
 	}
 	
 }

@@ -4,9 +4,6 @@ public class Main {
 
 	//************************************************************************************************	
 		public static void main(String[] args) {//** working very good!
-			
-			//Double doubleX = 0.0;
-			int tracker = 0;
 
 	////******Now we grab a Double Array and fill each Node with the values within the Double array.
 			// created the 3 hard coded Double Arrays for the 3 different trials
@@ -14,17 +11,13 @@ public class Main {
 			Double[] dblHardCoded2 = new Double[]{10.0, 100.0, 10.0};
 			Double[] dblHardCoded3 = new Double[]{100.0, 10.0, 15.0, 20.0, 200.0, 30.0, 40.0, 300.0};
 
-//			SinglyLinkedList<Double> singlyLinkedListDouble = new SinglyLinkedList<Double>();
-//			singlyLinkedListDouble.addFirst(doubleX);
-
-
 			ArrayHandler arrHandler3 = new ArrayHandler(dblHardCoded3);
 			arrHandler3.PresentArrayCell();
 			//Double doubleX = arrHandler3.PresentArrayCell();
 			//System.out.println(doubleX + "\t\t_DoubleX");
 			//System.out.println("- - - - - - - - - - -");
 						
-			System.out.println(dblHardCoded3);
+			//System.out.println(dblHardCoded3);
 			
 			
 			

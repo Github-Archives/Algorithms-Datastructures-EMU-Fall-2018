@@ -4,28 +4,28 @@ package hw0911;
 
 public class SinglyLinkedList <E> {//official book page @page #126
 	
-	////----------Creates the Nodes------------------------------
-	//----------- nested Node class ----------------------------
-	private static class Node<E> {
-		
-		private E element;	// reference to "element" stored at this Node
-		private Node<E> next; // reference to the "next" Node in the List
-		
-		public Node(E e, Node<E> n) {
-			element = e;
-			next = n;
-		}
-		public E getElement() {
-			return element;
-		}
-		public Node<E> getNext() {
-			return next;
-		}
-		public void setNext(Node<E> n) {
-			next = n;
-		}
-	}//------ end of nested Node class --------
-	//----------------------------------------
+			////----------Creates the Nodes------------------------------
+			//----------- nested Node class ----------------------------
+			private static class Node<E> {
+				
+				private E element;	// reference to "element" stored at this Node
+				private Node<E> next; // reference to the "next" Node in the List
+				
+				public Node(E e, Node<E> n) {
+					element = e;
+					next = n;
+				}
+				public E getElement() {
+					return element;
+				}
+				public Node<E> getNext() {
+					return next;
+				}
+				public void setNext(Node<E> n) {
+					next = n;
+				}
+			}//------ end of nested Node class --------
+			//----------------------------------------
 	
 	// Instance variables of the SinglyLinkedList
 	private Node<E> head = null;	// head node of the list (or null if empty)
