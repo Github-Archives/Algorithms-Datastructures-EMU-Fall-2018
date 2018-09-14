@@ -20,12 +20,12 @@ Right-Click --> Run As --> Run Configuration --> Arguments --> Program arguments
 
 (Now input the following, making sure to leave a space between each value).
 
-Click --> Apply --> Run..
-
 100.0 
 
 10.0 100.0 10.0 
 
 100.0 10.0 15.0 20.0 200.0 30.0 40.0 300.0
+
+Click --> Apply --> Run..
 
 ________________________________________________________________________________________________________________________
