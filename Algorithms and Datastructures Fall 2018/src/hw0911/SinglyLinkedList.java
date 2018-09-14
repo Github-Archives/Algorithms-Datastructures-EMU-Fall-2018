@@ -2,6 +2,7 @@
 //hw0911
 //https://github.com/Drew-Williams/Algorithms-and-Datastructures-Fall-2018/blob/master/hw0911.java
 //COSC 311
+// Can you red this??
 
 package hw0911;
 
@@ -21,15 +22,14 @@ public class SinglyLinkedList {
             System.out.println(s);
 		 }
 		
-		// makes sure we loop through only thrice
-         
-		int cycle = 1;		
-		do {
-			System.out.println("cycle #" + cycle);
-			double[] hardCodedDoubles = new double[cycle];
-			cycle += 1;			
-		}
-		while(cycle <= 3);
+//		// makes sure we loop through only thrice       
+//		int cycle = 1;		
+//		do {
+//			System.out.println("cycle #" + cycle);
+//			double[] hardCodedDoubles = new double[cycle];
+//			cycle += 1;			
+//		}
+//		while(cycle <= 3);
 		
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// http://theopentutorials.com/tutorials/java/cmd-line-args/how-to-pass-command-line-arguments-in-eclipse-ide/
@@ -47,7 +47,7 @@ public class SinglyLinkedList {
 		// 			100.0 10.0 15.0 20.0 200.0 30.0 40.0 300.0
 		//
 		/////////////////////////////////////////////////////////////////
-		
+		System.out.println("______________________________");
 		// Assign all values using Eclipse Command-line arguments at runtime
 		double a, b, c, d, e, f, g, h, i, j, k, l;
 		a = Double.parseDouble(args[0]);  		// 100.0
