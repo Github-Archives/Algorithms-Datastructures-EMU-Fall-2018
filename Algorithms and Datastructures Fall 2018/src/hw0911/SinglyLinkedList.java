@@ -90,13 +90,22 @@ public class SinglyLinkedList <E> {//official book page @page #126
 //************************************************************************************************	
 	public static void main(String[] args) {//** working very good!
 		
+		Double doubleX = 0.0;
+
 ////******Now we grab a Double Array and fill each Node with the values within the Double array.
 		// created the 3 hard coded Double Arrays for the 3 different trials
-		Double[] dblHardCoded1 = new Double[]{100.0};		
-		Double[] dblHardCoded2 = new Double[]{10.0, 100.0, 10.0};	
+		Double[] dblHardCoded1 = new Double[]{100.0};
+		Double[] dblHardCoded2 = new Double[]{10.0, 100.0, 10.0};
 		Double[] dblHardCoded3 = new Double[]{100.0, 10.0, 15.0, 20.0, 200.0, 30.0, 40.0, 300.0};
-		
+
 		SinglyLinkedList<Double> singlyLinkedListDouble = new SinglyLinkedList<Double>();
+		
+		
+		
+		
+		// doubleX needs to be current array cell Double value
+		
+		singlyLinkedListDouble.addFirst(doubleX);
 		
 		
 		
@@ -112,7 +121,10 @@ public class SinglyLinkedList <E> {//official book page @page #126
 		arrHandler3.PrintDoubleArrayContents();
 		
 		
+		
+		
 	}	// end of main
+	
 	
 }	// end of SinglyLinkedList
 
