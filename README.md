@@ -10,7 +10,14 @@ https://www.geeksforgeeks.org/java/
 Video Showing How to Use Eclipse & Github Together
 https://www.youtube.com/watch?v=LPT7v69guVY
 
-*Don't forget that we are using the Eclipse CommandLine Arguments Method to Hard-code the Double values:
+*Don't forget that we are using the Eclipse CommandLine Arguments Method to Hard-code the Double values.
+Here's how we get there to add the values below (Remember that the arguments are all seen as STRINGS, even if you put these Doubles below, therefore you will have to convert them to Doubles when they come out).
+
+Anyway, to input the commandLine (Runtime) Arguments do this:
+
+# Right-Click --> Run As --> Run Configuration --> Arguments --> Program arguments..
+Now input the following, making sure to leave a space between each value.
+# Click --> Apply --> Run..
 
 
 100.0 
