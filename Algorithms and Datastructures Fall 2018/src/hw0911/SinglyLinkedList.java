@@ -130,18 +130,3 @@ public class SinglyLinkedList <E> {//official book page @page #126
 //System.out.println("sll size:" + sll.size());
 //System.out.println("sll First(Head):" + sll.first());	
 
-
-
-
-
-
-////----------- Test - 3 arrays of Doubles -------------------------
-//for (int i = 0; i < dblHardCoded1.length; i++)
-//	System.out.println("\nElement at index " + i + " : " + dblHardCoded1[i]);
-//System.out.println("_____________________________________________________");
-//for (int i = 0; i < dblHardCoded2.length; i++)
-//	System.out.println("Element at index " + i + " : " + dblHardCoded2[i]);
-//System.out.println("_____________________________________________________");
-//for (int i = 0; i < dblHardCoded3.length; i++)
-//	System.out.println("Element at index " + i + " : " + dblHardCoded3[i]);
-//System.out.println("_____________________________________________________");
