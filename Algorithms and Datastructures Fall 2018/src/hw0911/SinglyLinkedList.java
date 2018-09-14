@@ -32,7 +32,9 @@ public class SinglyLinkedList <E> {//official book page @page #126
 	private Node<E> tail = null;	// last node of the list (or null if empty)
 	private int size = 0;			// number of nodes in the list
 	
-	public SinglyLinkedList() { }		// constructs an initially empty list
+	public SinglyLinkedList() { 
+		// constructs an initially empty list
+	}		
 
 	// ACCESS METHODS
 	public int size() {
