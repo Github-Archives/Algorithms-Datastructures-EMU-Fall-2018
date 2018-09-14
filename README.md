@@ -16,11 +16,11 @@ Here's how we get there to add the values below (Remember that the arguments are
 
 Anyway, to input the commandLine (Runtime) Arguments do this:
 
-Right-Click --> Run As --> Run Configuration --> Arguments --> Program arguments..
+  Right-Click --> Run As --> Run Configuration --> Arguments --> Program arguments..
 
 (Now input the following, making sure to leave a space between each value).
 
-Click --> Apply --> Run..
+  Click --> Apply --> Run..
 
 100.0 
 
