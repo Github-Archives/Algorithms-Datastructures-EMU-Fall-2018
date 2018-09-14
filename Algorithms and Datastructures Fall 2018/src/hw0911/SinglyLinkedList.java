@@ -5,6 +5,8 @@
 // READ THIS??
 // FUCK YOU CAN YOU READ THISSSSS THOUGH???
 
+//// FUCK ME WHAT ABOUT THIS HUH?
+
 package hw0911;
 
 public class SinglyLinkedList {
