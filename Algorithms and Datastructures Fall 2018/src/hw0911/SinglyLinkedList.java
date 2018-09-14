@@ -2,11 +2,6 @@
 //hw0911
 //https://github.com/Drew-Williams/Algorithms-and-Datastructures-Fall-2018/blob/master/hw0911.java
 //COSC 311
-// READ THIS??
-// FUCK YOU CAN YOU READ THISSSSS THOUGH???
-
-//// FUCK ME WHAT ABOUT THIS HUH?
-// 00d0d00d0d0
 
 package hw0911;
 
@@ -27,7 +22,6 @@ public class SinglyLinkedList {
 		 }
 		
 		// makes sure we loop through only thrice
-         int vampire = 666;
          
 		int cycle = 1;		
 		do {
