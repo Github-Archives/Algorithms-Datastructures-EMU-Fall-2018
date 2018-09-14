@@ -9,3 +9,8 @@ https://www.geeksforgeeks.org/java/
 
 Video Showing How to Use Eclipse & Github Together
 https://www.youtube.com/watch?v=LPT7v69guVY
+
+*Don't forget that we are using the Eclipse CommandLine Arguments Method to Hard-code the Double values:
+100.0 
+10.0 100.0 10.0 
+100.0 10.0 15.0 20.0 200.0 30.0 40.0 300.0
