@@ -6,8 +6,6 @@
 package hw0911;
 
 public class SinglyLinkedList {
-
-	
 	
 	public static void main(String[] args) {
 		
@@ -17,19 +15,22 @@ public class SinglyLinkedList {
 //		 Note: A forward traversal of the linked list must give the data in the same 
 //		 order as a forward traversal of the hardcoded input array.
 		
+		//https://docs.oracle.com/javase/tutorial/essential/environment/cmdLineArgs.html
+		// prints out every single STRING in the arguments
+         for (String s: args) {
+            System.out.println(s);
+		 }
+		
 		// makes sure we loop through only thrice
-		int cycle = 1;
-				
-		do {
-			System.out.println("cycle #" + cycle);
-			
-			double[] hardCodedDoubles = new double[cycle];
-			
-			
-			
-			cycle += 1;			
-		}
-		while(cycle <= 3);
+//		int cycle = 1;		
+//		do {
+//			System.out.println("cycle #" + cycle);
+//			
+//			double[] hardCodedDoubles = new double[cycle];
+//				
+//			cycle += 1;			
+//		}
+//		while(cycle <= 3);
 		
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// http://theopentutorials.com/tutorials/java/cmd-line-args/how-to-pass-command-line-arguments-in-eclipse-ide/
