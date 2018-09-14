@@ -22,15 +22,15 @@ public class SinglyLinkedList {
 		 }
 		
 		// makes sure we loop through only thrice
-//		int cycle = 1;		
-//		do {
-//			System.out.println("cycle #" + cycle);
-//			
-//			double[] hardCodedDoubles = new double[cycle];
-//				
-//			cycle += 1;			
-//		}
-//		while(cycle <= 3);
+		int cycle = 1;		
+		do {
+			System.out.println("cycle #" + cycle);
+			
+			double[] hardCodedDoubles = new double[cycle];
+				
+			cycle += 1;			
+		}
+		while(cycle <= 3);
 		
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// http://theopentutorials.com/tutorials/java/cmd-line-args/how-to-pass-command-line-arguments-in-eclipse-ide/
