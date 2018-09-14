@@ -6,3 +6,6 @@ https://emunix.emich.edu/~haynes/311/fa18/
 
 Great Java Resource
 https://www.geeksforgeeks.org/java/
+
+Video Showing How to Use Eclipse & Github Together
+https://www.youtube.com/watch?v=LPT7v69guVY
