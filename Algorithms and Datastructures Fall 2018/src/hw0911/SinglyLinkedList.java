@@ -1,90 +1,142 @@
+//Drew Williams
+//hw0911
+//https://github.com/Drew-Williams/Algorithms-and-Datastructures-Fall-2018/blob/master/hw0906
+//COSC 311
+
+
+//https://stackoverflow.com/questions/4066729/creating-a-linkedlist-class-from-scratch/43735894?s=3|21.2192#43735894
 package hw0911;
-// Data Structures and Algorithms in Java Sixth Edition Goodrich, Tamassia, Goldwasser.
-// pg. 126-127
 
-public class SinglyLinkedList <E> {//official book page @page #126
-	
-			////----------Creates the Nodes------------------------------
-			//----------- inner nested Node class ----------------------------
-			private static class Node<E> {
-				
-				private E element;	// reference to "element" stored at this Node
-				private Node<E> next; // reference to the "next" Node in the List
-				
-				public Node(E e, Node<E> n) {
-					element = e;
-					next = n;
-				}
-				public E getElement() {
-					return element;
-				}
-				public Node<E> getNext() {
-					return next;
-				}
-				public void setNext(Node<E> n) {
-					next = n;
-				}
-			}//------ end of nested Node class --------
-			//----------------------------------------
-	
-	// Instance variables of the SinglyLinkedList
-	private Node<E> head = null;	// head node of the list (or null if empty)
-	private Node<E> tail = null;	// last node of the list (or null if empty)
-	private int size = 0;			// number of nodes in the list
-	
-	public SinglyLinkedList() { 
-		// constructs an initially empty list
-	}		
+import java.util.Scanner;
 
-	// ACCESS METHODS
-	public int size() {
-		return size;
-	}
-	public boolean isEmpty() {
-		return size == 0;
-	}
-	public E first() {				// returns (but does not remove) the first element
-		if (isEmpty()) {
-			return null;
+public class SinglyLinkedList {
+
+    @SuppressWarnings("resource")
+    public static void main(String[] args) {
+    	
+    	double currentDbl = 0.0;
+    	double currentSum = 0.0;
+    	double currentAvg = 0.0;
+    	int tracker = 0;
+    	
+    	double[] array1 = new double[] {100.0};
+    	double[] array2 = new double[] {10.0, 10.0, 100.0};
+    	double[] array3 = new double[] {100.0, 10.0, 15.0, 20.0, 200.0, 30.0, 40.0, 300.0};
+    	
+    	SinglyLinkedListImpl listImpl = new SinglyLinkedListImpl();
+    	
+    	//First Array
+    	for (int i = 0; i < array1.length; i++) {
+    		currentDbl = array1[i];
+    		
+    		listImpl.insertAtEnd(currentDbl);	
+    	}
+    	System.out.println("Starting list:");
+    	listImpl.disply();
+    	 	
+    	for (int i = 0; i < array1.length; i++) {
+    		currentSum += array1[i];
+    		tracker += 1;
+    	}
+    	
+    	currentAvg = currentSum / tracker;
+    	//System.out.println("Current Sum :" + currentSum);
+    	System.out.println("\nAverage :" + currentAvg);
+    	
+    	for (int i = 0; i < array1.length; i++) {
+    		currentDbl = array1[i];
+    		if (currentDbl < currentAvg) {
+    			listImpl.deleteNodeByGivenData(currentDbl);
+    		}
+    	}
+    	System.out.println("\nEnding list:");
+    	listImpl.disply();
+    	
+    	// Delete all nodes' data
+    	for (int i = 0; i < array1.length; i++) {
+    		currentDbl = array1[i];
+			if (currentDbl > 0.0) {
+				listImpl.deleteNodeByGivenData(currentDbl);
+			}
+    	}
+		// Clear sum & avg
+		currentSum = 0.0;
+		currentAvg = 0.0;
+		tracker = 0;
+		
+    	System.out.println("________________________________");
+
+    	//Second array
+    	for (int i = 0; i < array2.length; i++) {
+    		currentDbl = array2[i];
+    		
+    		listImpl.insertAtEnd(currentDbl);	
+    	}
+    	System.out.println("Starting list:");
+    	listImpl.disply();
+    	
+    	for (int i = 0; i < array2.length; i++) {
+    		currentSum += array2[i];
+    		tracker += 1;
+    	}
+    	
+    	currentAvg = currentSum / tracker;
+    	//System.out.println("Current Sum :" + currentSum);
+    	System.out.println("Average :" + currentAvg);
+    	
+    	for (int i = 0; i < array2.length; i++) {
+    		currentDbl = array2[i];
+    		if (currentDbl < currentAvg) {
+    			listImpl.deleteNodeByGivenData(currentDbl);
+    		}
+    	}
+    	System.out.println("\nEnding list:");
+    	listImpl.disply();
+    	// Delete all nodes' data
+		if (currentDbl > 0.0) {
+			listImpl.deleteNodeByGivenData(currentDbl);
 		}
-		return head.getElement();
-	}
-	public E last() {				// returns (but does not remove) the last element
-		if (isEmpty()) {
-			return null;
+		// Clear sum & avg
+		currentSum = 0.0;
+		currentAvg = 0.0;
+		tracker = 0;
+    	
+    	System.out.println("________________________________");
+
+    	//Third array
+    	for (int i = 0; i < array3.length; i++) {
+    		currentDbl = array3[i];	
+    		listImpl.insertAtEnd(currentDbl);	
+    	}
+    	System.out.println("Starting list:");
+    	listImpl.disply();
+    	
+    	for (int i = 0; i < array3.length; i++) {
+    		currentSum += array3[i];
+    		tracker += 1;
+    	}
+    	
+    	currentAvg = currentSum / tracker;
+    	//System.out.println("Current Sum :" + currentSum);
+    	System.out.println("Average :" + currentAvg);
+    	
+    	for (int i = 0; i < array3.length; i++) {
+    		currentDbl = array3[i];
+    		if (currentDbl < currentAvg) {
+    			listImpl.deleteNodeByGivenData(currentDbl);
+    		}
+    	}
+    	System.out.println("\nEnding list:");
+    	listImpl.disply();
+    	// Delete all nodes' data
+		if (currentDbl > 0.0) {
+			listImpl.deleteNodeByGivenData(currentDbl);
 		}
-		return tail.getElement();
-	}
-	
-	// UPDATE METHODS
-	public void addFirst(E e) {		// adds element 'e' to the front of the list
-		head = new Node<>(e, head);	// create and link a new node
-		if (size == 0) {
-			tail = head;			// special case: new node becomes tail also 
-		}
-		size++;							
-	}
-	public void addLast(E e) {		// adds element 'e' to the end of the list
-		Node<E> newest = new Node<>(e, null);	// node will eventually be the tail
-		if (isEmpty()) {
-			head = newest;			// special case: previously empty list
-		}else {
-			tail.setNext(newest);	// new node after existing tail
-		}
-		tail = newest;				// new node becomes the tail
-		size++;
-	}
-	public E removeFirst() {		// removes and returns the first element
-		if (isEmpty()) {
-			return null;			// nothing to return
-		}
-		E answer = head.getElement();
-		head = head.getNext();		// will become null if list had only one node
-		size--;
-		if (size == 0) {
-			tail = null;			// special case as list is now empty
-		}
-		return answer;		
-	}
-	
-}	// end of SinglyLinkedList
+		// Clear sum & avg
+		currentSum = 0.0;
+		currentAvg = 0.0;
+		tracker = 0;
+  	
+    	System.out.println("________________________________");
+    }
+}
